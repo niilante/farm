@@ -1,0 +1,248 @@
+<nav class="transition--fade">
+            <div class="nav-bar" data-fixed-at="200">
+                <div class="nav-module left">
+                    <a href="/">
+                        <img class="logo logo-dark" alt="Puuni" src="assets/img/logo-dark.png" />
+                        <img class="logo logo-light" alt="Puuni" src="assets/img/logo-light.png" />
+                    </a>
+                </div>
+                <div class="nav-module menu-module left">
+                    <ul class="menu">
+                        <li>
+                            <a [routerLink]="['/landing']" routerLinkActive="active">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/download']" routerLinkActive="active">
+                                Download Center
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/farm']" routerLinkActive="active">
+                                Work/Farm
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/shop']" routerLinkActive="active">
+                                Shop
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/about']" routerLinkActive="active">
+                                About Us
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!--end nav module-->
+                <div class="nav-module right">
+                    <a routerLink="login" routerLinkActive="active" class="nav-function" Inside> <!-- data-notification-link="cart-overview"  Inside-->
+                        <i class="icon-Genius icon icon--sm"></i>
+                        <span>User</span>
+                    </a>
+                </div>
+                <div class="nav-module right">
+                    <a href="#" class="nav-function modal-trigger" data-modal-id="search-for" >
+                        <i class="interface-search icon icon--sm"></i>
+                        <span>Search</span>
+                    </a>
+                </div>
+            </div>
+            <!--end nav bar-->
+            <div class="nav-mobile-toggle visible-sm visible-xs">
+                <i class="icon-Align-Right icon icon--sm"></i>
+            </div>
+        </nav>
+        <!--	<div class="notification pos-right pos-top cart-overview" data-notification-link="cart-overview" data-animation="from-right">
+            <div class="cart-overview__title">
+                <h5>Your Cart</h5>
+            </div>
+            <ul class="cart-overview__items">
+                <li>
+                    <div class="item__image">
+                        <a href="#">
+                            <img alt="product" src="img/product-small-1.png" />
+                        </a>
+                    </div>
+                    <div class="item__detail">
+                        <span>Dave Wool Beanie</span>
+                        <span class="h6">1 x $39.00</span>
+                    </div>
+                    <div class="item__remove" title="Remove From Cart"></div>
+                </li>
+                <li>
+                    <div class="item__image">
+                        <a href="#">
+                            <img alt="product" src="img/product-small-2.png" />
+                        </a>
+                    </div>
+                    <div class="item__detail">
+                        <span>Rose Tinted Glasses</span>
+                        <span class="h6">1 x $89.00</span>
+                    </div>
+                    <div class="item__remove" title="Remove From Cart"></div>
+                </li>
+            </ul>
+            <div class="cart-overview__subtotal">
+                <h5>Subtotal:</h5>
+                <span>$128.00</span>
+            </div>
+            <div class="cart-overview__action">
+                <a href="#" class="btn btn--square btn--primary">
+                    <span class="btn__text">
+                        Checkout Now
+                    </span>
+                </a>
+            </div>
+        </div> -->
+
+        <div class="modal-container search-modal" data-modal-id="search-form">
+            <div class="modal-content bg-white imagebg" data-width="100%" data-height="100%">
+                <div class="pos-vertical-center clearfix">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+                        <form class="clearfix">
+                            <div class="input-with-icon">
+                                <i class="icon-Magnifi-Glass2 icon icon--sm"></i>
+                                <input type="search" name="query" placeholder="Type your search and hit enter" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--end of modal-content-->
+        </div>
+        <!--end of modal-container-->
+
+        <div class="main-container transition--fade">
+		<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="elements--title center">
+								<h4>Apps Here</h4>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12">
+							<a href="#">
+								<div class="card card-3">
+									<div class="card__image">
+										<img alt="Pic" src="assets/img/work4.jpg">
+									</div>
+									<div class="card__body boxed bg--white">
+										<div class="card__title">
+											<h5>Download On Google's PlayStore</h5>
+										</div>
+									
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-sm-12">
+							<a href="#">
+								<div class="card card-3">
+									<div class="card__image">
+										<img alt="Pic" src="assets/img/work2.jpg">
+									</div>
+									<div class="card__body boxed bg--white">
+										<div class="card__title">
+											<h5>Download On Apple's AppStore</h5>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="features features-9">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h3>App Features &amp; Benefits</h3>
+							<p class="lead">
+								Puuni features a bevvy of content blocks and layouts to create your farm.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-push-4 col-md-offset-0 col-sm-6 col-sm-offset-3 text-center">
+							<img alt="device" src="assets/img/device2.png">
+						</div>
+						<div class="col-md-3 col-md-pull-4 col-sm-6 col-xs-6 text-right text-left-xs">
+							<div class="feature feature-1">
+								<i class="icon icon-Fingerprint-2"></i>
+								<h5>Over 2,000 Farm Acres </h5>
+								<p>Puuni includes the Farm Mind kit with each purchase.</p>
+							</div>
+							<div class="feature feature-1">
+								<i class="icon icon-Approved-Window"></i>
+								<h5>Intuitive Models</h5>
+								<p>Focussed on readability and performance: Tinker on!</p>
+							</div>		
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 col-md-push-2">
+							<div class="feature feature-1">
+								<i class="icon icon-Support"></i>
+								<h5>Top Notch Support</h5>
+								<p>Each purchase of Puuni includes full support and maintenance.</p>
+							</div>
+							<div class="feature feature-1">
+								<i class="icon icon-Box-Open"></i>
+								<h5>Builder Included</h5>
+								<p>Assemble farm with the included Puuni Farm Builder.</p>
+							</div>		
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="bg--dark">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h4>Screenshot Showcase</h4>
+							<div class="slider slider--controlsoutside screenshot-slider" data-items="4" data-paging="true" data-arrows="false">
+								<ul class="slides">
+									<li>
+										<div class="col-sm-12">
+											<img alt="screenshot" src="assets/img/app-screenshot-1.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="col-sm-12">
+											<img alt="screenshot" src="assets/img/app-screenshot-2.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="col-sm-12">
+											<img alt="screenshot" src="assets/img/app-screenshot-3.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="col-sm-12">
+											<img alt="screenshot" src="assets/img/app-screenshot-4.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="col-sm-12">
+											<img alt="screenshot" src="assets/img/app-screenshot-5.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="col-sm-12">
+											<img alt="screenshot" src="assets/img/app-screenshot-6.jpg">
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<puuni-footer></puuni-footer>
+
+		</div>

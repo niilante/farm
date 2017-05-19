@@ -1,0 +1,392 @@
+<nav class="transition--fade">
+            <div class="nav-bar" data-fixed-at="200">
+                <div class="nav-module left">
+                    <a href="/">
+                        <img class="logo logo-dark" alt="Puuni" src="assets/img/logo-dark.png" />
+                        <img class="logo logo-light" alt="Puuni" src="assets/img/logo-light.png" />
+                    </a>
+                </div>
+                <div class="nav-module menu-module left">
+                    <ul class="menu">
+                        <li>
+                            <a [routerLink]="['/landing']" routerLinkActive="active">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/download']" routerLinkActive="active">
+                                Download Center
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/farm']" routerLinkActive="active">
+                                Work/Farm
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/shop']" routerLinkActive="active">
+                                Shop
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/about']" routerLinkActive="active">
+                                About Us
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!--end nav module-->
+                <div class="nav-module right">
+                    <a routerLink="login" routerLinkActive="active" class="nav-function" Inside> <!-- data-notification-link="cart-overview"  Inside-->
+                        <i class="icon-Genius icon icon--sm"></i>
+                        <span>User</span>
+                    </a>
+                </div>
+                <div class="nav-module right">
+                    <a href="#" class="nav-function modal-trigger" data-modal-id="search-for" >
+                        <i class="interface-search icon icon--sm"></i>
+                        <span>Search</span>
+                    </a>
+                </div>
+            </div>
+            <!--end nav bar-->
+            <div class="nav-mobile-toggle visible-sm visible-xs">
+                <i class="icon-Align-Right icon icon--sm"></i>
+            </div>
+        </nav>
+        <!--	<div class="notification pos-right pos-top cart-overview" data-notification-link="cart-overview" data-animation="from-right">
+            <div class="cart-overview__title">
+                <h5>Your Cart</h5>
+            </div>
+            <ul class="cart-overview__items">
+                <li>
+                    <div class="item__image">
+                        <a href="#">
+                            <img alt="product" src="img/product-small-1.png" />
+                        </a>
+                    </div>
+                    <div class="item__detail">
+                        <span>Dave Wool Beanie</span>
+                        <span class="h6">1 x $39.00</span>
+                    </div>
+                    <div class="item__remove" title="Remove From Cart"></div>
+                </li>
+                <li>
+                    <div class="item__image">
+                        <a href="#">
+                            <img alt="product" src="img/product-small-2.png" />
+                        </a>
+                    </div>
+                    <div class="item__detail">
+                        <span>Rose Tinted Glasses</span>
+                        <span class="h6">1 x $89.00</span>
+                    </div>
+                    <div class="item__remove" title="Remove From Cart"></div>
+                </li>
+            </ul>
+            <div class="cart-overview__subtotal">
+                <h5>Subtotal:</h5>
+                <span>$128.00</span>
+            </div>
+            <div class="cart-overview__action">
+                <a href="#" class="btn btn--square btn--primary">
+                    <span class="btn__text">
+                        Checkout Now
+                    </span>
+                </a>
+            </div>
+        </div> -->
+
+        <div class="modal-container search-modal" data-modal-id="search-form">
+            <div class="modal-content bg-white imagebg" data-width="100%" data-height="100%">
+                <div class="pos-vertical-center clearfix">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+                        <form class="clearfix">
+                            <div class="input-with-icon">
+                                <i class="icon-Magnifi-Glass2 icon icon--sm"></i>
+                                <input type="search" name="query" placeholder="Type your search and hit enter" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--end of modal-content-->
+        </div>
+        <!--end of modal-container-->
+
+        <div class="main-container transition--fade">
+            <section class="height-50 page-title page-title--animate">
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h1>Shop Cards</h1>
+                            <p class="lead">Showcase shop items in a sylish grid arrangement.</p>
+                        </div>
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </section>
+            <section class="masonry-contained">
+                <div class="container">
+                    <div class="row">
+                        <div class="masonry masonry-shop">
+                            <div class="masonry__filters text-center" data-filter-all-text="Show All"></div>
+                            <div class="masonry__container masonry--animate">
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="accessories">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-1.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Accessories</h6>
+                                                    <h5>Charles Leather Bag</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span class="type--strikethrough">$129.99</span>
+                                                    <span>$89.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="apparel">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-3.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Apparel</h6>
+                                                    <h5>Dave Wool Beanie</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span>$39.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="bags">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-4.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Bags</h6>
+                                                    <h5>Bonnie Denim Tote</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span class="type--strikethrough">$99.00</span>
+                                                    <span>$48.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="accessories">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-5.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Accessories</h6>
+                                                    <h5>Lucas Wrist Watch</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span>$48.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="apparel">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-8.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Apparel</h6>
+                                                    <h5>Logan Slub Tee</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span class="type--strikethrough">$99.00</span>
+                                                    <span>$59.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="bags">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-2.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Apparel</h6>
+                                                    <h5>Logan Slub Tee</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span>$59.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="accessories">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-6.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Accessories</h6>
+                                                    <h5>Rose Tinted Glasses</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span class="type--strikethrough">$149.00</span>
+                                                    <span>$89.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="apparel">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-9.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Apparel</h6>
+                                                    <h5>Hunter Formal Shirt</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span>$129.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="accessories">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-10.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Accessories</h6>
+                                                    <h5>Kenneth Leather Wallet</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span>$79.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="apparel">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-11.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Apparel</h6>
+                                                    <h5>Francis Felt Hat</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span>$79.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="accessories">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-12.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Accessories</h6>
+                                                    <h5>Dennis Glasses</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span>$149.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 masonry__item" data-masonry-filter="apparel">
+                                    <a href="#">
+                                        <div class="card card-7">
+                                            <div class="card__image">
+                                                <img alt="Pic" src="assets/img/product-large-7.jpg" />
+                                            </div>
+                                            <div class="card__body boxed bg--white">
+                                                <div class="card__title">
+                                                    <h6>Apparel</h6>
+                                                    <h5>Bruce Leather Shoes</h5>
+                                                </div>
+                                                <div class="card__price">
+                                                    <span>$189.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end masonry container-->
+                        </div>
+                        <!--end masonry-->
+                        <div class="pagination-container">
+                            <hr>
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#">
+                                        <span>&larr;</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>&rarr;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+                <puuni-footer></puuni-footer>
+
+            </div>

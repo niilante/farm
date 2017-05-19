@@ -1,0 +1,41 @@
+function userRole(){
+   return prior(root).child('users')
+   .child(auth.uid).child('role')
+   .child('name').val();
+}
+
+function isOwner (auth, userKey) {
+  return auth.uid == userKey;
+}
+
+function isAdmin () {
+  return userRole() == 'admin';
+}
+
+function isEducator () {
+  return userRole() == 'educator';
+}
+
+function isStudent () {
+  return userRole() == 'student';
+}
+
+path /roles {
+  read() { isAdmin() }
+  write() { isAdmin() }
+}
+
+path /users {
+  read() { isAdmin() }
+  write() { isAdmin() }
+}
+
+path /users/{uid} {
+  read() { isOwner(auth, uid) }
+  write() { isAdmin() }
+}
+
+path /users/{uid}/profile {
+   write() { isOwner(auth, uid) }
+   index() { ["email"] }
+}

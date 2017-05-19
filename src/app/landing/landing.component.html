@@ -1,0 +1,449 @@
+<nav class="transition--fade">
+            <div class="nav-bar nav--absolute nav--transparent" data-fixed-at="200">
+                <div class="nav-module logo-module left">
+                    <a href="/">
+                        <img class="logo logo-dark" alt="Puuni" src="assets/img/logo-dark.png" />
+                        <img class="logo logo-light" alt="Puuni" src="assets/img/logo-light.png" />
+                    </a>
+                </div>
+                <div class="nav-module menu-module left">
+                    <ul class="menu">
+                        <li>
+                            <a [routerLink]="['/landing']" routerLinkActive="active">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/download']" routerLinkActive="active">
+                                Download Center
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/farm']" routerLinkActive="active">
+                                Work/Farm
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/shop']" routerLinkActive="active">
+                                Shop
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/about']" routerLinkActive="active">
+                                About Us
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!--end nav module-->
+                <div class="nav-module right">
+                    <a [routerLink]="['/login']" routerLinkActive="active" class="nav-function" Inside> <!-- data-notification-link="cart-overview"  Inside-->
+                        <i class="icon-Genius icon icon--sm"></i>
+                        <span>User</span>
+                    </a>
+                </div>
+                <div class="nav-module right">
+                    <a href="#" class="nav-function modal-trigger" data-modal-id="search-for" >
+                        <i class="interface-search icon icon--sm"></i>
+                        <span>Search</span>
+                    </a>
+                </div>
+            </div>
+            <!--end nav bar-->
+            <div class="nav-mobile-toggle visible-sm visible-xs">
+                <i class="icon-Align-Right icon icon--sm"></i>
+            </div>
+        </nav>
+
+        <!--	<div class="notification pos-right pos-top cart-overview" data-notification-link="cart-overview" data-animation="from-right">
+            <div class="cart-overview__title">
+                <h5>Your Cart</h5>
+            </div>
+            <ul class="cart-overview__items">
+                <li>
+                    <div class="item__image">
+                        <a href="#">
+                            <img alt="product" src="img/product-small-1.png" />
+                        </a>
+                    </div>
+                    <div class="item__detail">
+                        <span>Dave Wool Beanie</span>
+                        <span class="h6">1 x $39.00</span>
+                    </div>
+                    <div class="item__remove" title="Remove From Cart"></div>
+                </li>
+                <li>
+                    <div class="item__image">
+                        <a href="#">
+                            <img alt="product" src="img/product-small-2.png" />
+                        </a>
+                    </div>
+                    <div class="item__detail">
+                        <span>Rose Tinted Glasses</span>
+                        <span class="h6">1 x $89.00</span>
+                    </div>
+                    <div class="item__remove" title="Remove From Cart"></div>
+                </li>
+            </ul>
+            <div class="cart-overview__subtotal">
+                <h5>Subtotal:</h5>
+                <span>$128.00</span>
+            </div>
+            <div class="cart-overview__action">
+                <a href="#" class="btn btn--square btn--primary">
+                    <span class="btn__text">
+                        Checkout Now
+                    </span>
+                </a>
+            </div>
+        </div> -->
+
+     <!--   <div class="modal-container search-modal" data-modal-id="search-form" class="cart-overview__items">
+            <div class="modal-content bg-white imagebg" data-width="100%" data-height="100%">
+                <div class="pos-vertical-center clearfix" >
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+                        <form class="clearfix">
+                            <div class="input-with-icon">
+                                <i class="icon-Magnifi-Glass2 icon icon--sm"></i>
+                                <input type="search" name="query" placeholder="Type your search and hit enter" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--end of modal-content-
+        </div>  -->
+        <!--end of modal-container-->
+		
+		<div class="main-container transition--fade">
+		<section class="slider slider--animate height-100 cover cover-5 parallax" data-animation="fade" data-arrows="true" data-paging="true" data-timing="5000">
+				<ul class="slides">
+					<li class="imagebg" data-overlay="4">
+						<div class="background-image-holder">
+							<img alt="puuni vegetables" src="assets/img/puuni1.jpg">
+						</div>
+						<div class="container pos-vertical-center">
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<h1>Shop, Cook, Eat.</h1>
+									<p class="lead">
+										Cooking a balanced meal is simple with Punni
+									</p>
+									<a class="btn btn--primary vpe" href="#">
+										<span class="btn__text">
+											Shop Now
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+                    <li class="imagebg" data-overlay="4">
+						<div class="background-image-holder">
+							<img alt="puuni vegetables slices" src="assets/img/puuni2.jpeg">
+						</div>
+						<div class="container pos-vertical-center">
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<h1>Edit.</h1>
+									<p class="lead">
+										Creating Better Standards
+									</p>
+									<a class="btn btn--primary vpe" href="#">
+										<span class="btn__text">
+											Shop Now
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+                    <li class="imagebg" data-overlay="4">
+						<div class="background-image-holder">
+							<img alt="puuni vegetables" src="assets/img/puuni4.jpeg">
+						</div>
+						<div class="container pos-vertical-center">
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<h1>Combine.</h1>
+									<p class="lead">
+										Eliminating The Middleman
+									</p>
+									<a class="btn btn--primary vpe" href="#">
+										<span class="btn__text">
+											Try Now
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="imagebg" data-overlay="4">
+						<div class="background-image-holder">
+							<img alt="puuni cabbage farm" src="assets/img/puuni3.jpeg">
+						</div>
+						<div class="container pos-vertical-center">
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<h1>Your Farm, Your Way.</h1>
+									<p class="lead">
+										Carefully styled, reusable elements and multiple farm options.
+									</p>
+									<a class="btn btn--primary vpe" href="#">
+										<span class="btn__text">
+											Purchase Farm Now
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+                    <li class="imagebg" data-overlay="4">
+						<div class="background-image-holder">
+							<img alt="puuni vegetables" src="assets/img/puuni5.jpeg">
+						</div>
+						<div class="container pos-vertical-center">
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<h1>Combine.</h1>
+									<p class="lead">
+										Reducing Food Waste.
+									</p>
+									<a class="btn btn--primary vpe" href="#">
+										<span class="btn__text">
+											T.
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			
+			<section class="space--sm shop-tabs bg--secondary parallax">
+				<div class="container">
+					<div class="row">
+						<div class="tabs-container tabs-1">
+							<ul class="tabs text-center">
+								<li class="active">
+									<div class="tab__title btn vpe">
+										<span class="btn__text">Craftsmanship</span>
+									</div>
+									<div class="tab__content">
+										<div class="row pos-vertical-align-columns">
+											<div class="col-md-6">
+												<h6>A Commitment To Quality</h6>
+												<p class="lead">
+													Robust design, sustainable production and honest pricing are the cornerstones of the Puuni vision — Ours values of craftsmanship and authenticity pervade every piece.
+												</p>
+											</div>
+											<div class="col-md-4 col-md-push-1 hidden-sm">
+												<img alt="pic" src="assets/img/shop-aux-1.jpg">
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="tab__title btn vpe">
+										<span class="btn__text">Sustainability</span>
+									</div>
+									<div class="tab__content">
+										<div class="row pos-vertical-align-columns">
+											<div class="col-md-6">
+												<h6>Responsible Production</h6>
+												<p class="lead">
+													Puuni combines smart, modern styling with all the features you’ll need to start a farm of almost any kind. Couple it with our exclusive shop and you’re golden.
+												</p>
+											</div>
+											<div class="col-md-4 col-md-push-1 hidden-sm">
+												<img alt="pic" src="assets/img/shop-aux-2.jpg">
+											</div>
+										</div>
+									</div>
+								</li>
+                                <li>
+									<div class="tab__title btn vpe">
+										<span class="btn__text">Affordable</span>
+									</div>
+									<div class="tab__content">
+										<div class="row pos-vertical-align-columns">
+											<div class="col-md-6">
+												<h6>A Need For All</h6>
+												<p class="lead">
+													Robust design, sustainable production and honest pricing are the cornerstones of the Pillar vision — Ours values of craftsmanship and authenticity pervade every piece.
+												</p>
+											</div>
+											<div class="col-md-4 col-md-push-1 hidden-sm">
+												<img alt="pic" src="assets/img/shop-aux-1.jpg">
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="tab__title btn vpe">
+										<span class="btn__text">Service Guarantee</span>
+									</div>
+									<div class="tab__content">
+										<div class="row pos-vertical-align-columns">
+											<div class="col-md-6">
+												<h6>A Commitment To Service</h6>
+												<p class="lead">
+													When it comes down to it, it's giving people a good farming experience in a basic way and I think Puuni guarantees that. 
+													There's always something new and something to excite us and surprise us, and that's why people come back.
+												</p>
+											</div>
+											<div class="col-md-4 col-md-push-1 hidden-sm">
+												<img alt="pic" src="assets/img/shop-aux-3.jpg">
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="parallax">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="card card-1">
+								<div class="card__icon">
+									<i class="icon icon--lg icon-Business-Man color--primary"></i>
+								</div>
+								<div class="card__body boxed bg--white">
+									<div class="card__title">
+										<h5>Sponsor</h5>
+									</div>
+									<p>
+										Put your money on a farm of interest 
+										Go through the profile of the farms and pick any of the farm that will interest you.
+										Farm types include Cassava Farms, Maize Farms, Tomato Farms, Pepper farm, Okro Farm, Yam Farm and Chicken Farms. 
+										All farms have different tenure/contract period and varying ROI from 13-25%
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="card card-1">
+								<div class="card__icon">
+									<i class="icon icon--lg icon-Farmer color--primary"></i>
+								</div>
+								<div class="card__body boxed bg--white">
+									<div class="card__title">
+										<h5>Farmer</h5>
+									</div>
+									<p>
+										At Puuni, farmers are engaged with raising of living organisms for food or raw materials. 
+										They are people who do some combination of raising field crops, orchards, vineyards, poultry, or other livestock. 
+										They also make sure that the entire chain knows about their growth an well being.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="card card-1">
+								<div class="card__icon">
+									<i class="icon icon--lg icon-Shop color--primary"></i>
+								</div>
+								<div class="card__body boxed bg--white">
+									<div class="card__title">
+										<h5>Shop</h5>
+									</div>
+									<p>
+											At Puuni, our shop is comprised of foodstuffs from the farm land, we also have other equipments such as shovels, seedbeds, etc that will help make the enviroment green again.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="subscribe subscribe-5 bg--secondary parallax">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 col-md-offset-1 col-sm-6">
+							<div class="form-subscribe-1 boxed boxed--lg bg--white box-shadow-wide">	
+								<div class="subscribe__title text-center">
+									<h4>Keep Informed</h4>
+									<p class="lead">
+										Subscribe for free resources and news updates.
+									</p>
+								</div>
+							
+		<form action="http://mrareco.createsend.com/t/d/s/kieth/" method="post" id="subForm" data-error="Please fill all fields correctly." data-success="Thanks for signing up! Please check your inbox for confirmation email.">
+		    <div class="input-with-icon"> 
+		      <label for="fieldName">Your Name</label>
+		      <i class="icon icon-Male-2"></i>
+		      <input id="fieldName" name="cm-name" type="text">
+		    </div>
+		    <div class="input-with-icon"> 
+		      <label for="fieldEmail">Email Address</label>
+		      <i class="icon icon-Mail-2"></i>
+		      <input class="validate-required validate-email" id="fieldEmail" name="cm-kieth-kieth" type="email" required="">
+		    </div>
+		
+		    <button type="submit">Subscribe Now</button>
+		</form>
+		
+		    
+							</div>
+						</div>
+						<div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">
+							<div class="subscribe__feature">
+								<h6>Free Resources</h6>
+								<p>
+									Our team of experts give back with elements, tools and tons more.
+								</p>
+							</div>
+							<div class="subscribe__feature">
+								<h6>Expert Interviews</h6>
+								<p>
+									We speak with some of the farms’s foremost farmers and sponsors on a range of topics.
+								</p>
+							</div>
+							<div class="subscribe__feature">
+								<h6>Quarterly Prizes</h6>
+								<p>
+									As if the free resources weren’t enough - we give away a sweet promo stash each quarter.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="features features-10 parallax">
+				<div class="feature bg--white col-md-4 text-center">
+					<i class="icon icon--lg icon-Map-Marker2"></i>
+					<h4>Drop on in</h4>
+					<p>
+						926 DC, <br>Dansoman -
+                        Accra  <br>Ghana
+					</p>
+				</div>
+                <div class="feature bg--dark col-md-4 text-center">
+					<i class="icon icon--lg icon-Computer"></i>
+					<h4>Connect online</h4>
+					<p>
+						Email: <a href="mailto:info@puuni.org">info@puuni.org</a><br>
+						Twitter: <a href="https://twitter.com/puunifarms">@puunifarms</a>
+					</p>
+				</div>
+				<div class="feature bg--secondary col-md-4 text-center">
+					<i class="icon icon--lg icon-Phone-2"></i>
+					<h4>Give us a call</h4>
+					<p>
+						Office: (+233) 0202 411698<br>
+						WhatsApp: (+233) 0547 870562
+					</p>
+				</div>
+			</section>
+
+      <puuni-footer></puuni-footer>
+
+		</div>

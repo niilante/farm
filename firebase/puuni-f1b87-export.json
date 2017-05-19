@@ -1,0 +1,42 @@
+{
+  "roles" : {
+    "m4AFjhSLkecykxkg3b7D7Taz9dL2" : {
+      "name" : "admin",
+      "users" : {
+        "wfMO8OAemHPYuHguWuh6ee78FQy1" : true
+      }
+    },
+    "-Kf3ZardwB5w9G6C_ExF" : {
+      "name" : "educator"
+    },
+    "-Kf3ZdbzMpFa9U9z2jA-" : {
+      "name" : "student",
+      "users" : {
+        "gk8mxdjuw3TX0XyeJAMoEcEB7oF3" : true
+      }
+    }
+  },
+  "users" : {
+    "gk8mxdjuw3TX0XyeJAMoEcEB7oF3" : {
+      "profile" : {
+        "email" : "123@sdajds.dj",
+        "username" : "lbilde22"
+      },
+      "role" : {
+        "id" : "-Kf3ZdbzMpFa9U9z2jA-",
+        "name" : "student"
+      }
+    },
+    "wfMO8OAemHPYuHguWuh6ee78FQy1" : {
+      "profile" : {
+        "displayName" : "Lars Bilde",
+        "email" : "ljb@easv.dk",
+        "username" : "labi"
+      },
+      "role" : {
+        "id" : "m4AFjhSLkecykxkg3b7D7Taz9dL2",
+        "name" : "admin"
+      }
+    }
+  }
+}
